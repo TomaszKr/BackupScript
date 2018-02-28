@@ -3,9 +3,9 @@ Create automatic backup with Cron from scrypt
 
 ## TO DO
 
-- [ ] Add scrypt
-- [ ] Add installation
-- [ ] Add file configuration
+- [X] Add scrypt
+- [X] Add installation
+- [X] Add file configuration
 - [ ] Add divers databases:
  
 

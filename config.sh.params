@@ -1,0 +1,6 @@
+#!/bin/bash
+config=(
+  pathWithProject="/home/USER/YOUR-PROJECT"
+  pathToBackUp="/home/USER/YOUR-BACKUP-PROJECT"
+  filename="YOUR-PROJECT"
+)
