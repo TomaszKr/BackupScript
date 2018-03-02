@@ -4,7 +4,6 @@ source config.sh.params
 newConfig=()
 IFS='=' eval 'split=(${config[@]})'
 
-echo ${split[@]}
 for ix in ${!split[*]}
 do 
 

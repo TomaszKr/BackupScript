@@ -6,8 +6,11 @@ Create automatic backup with Cron from scrypt
 - [X] Add scrypt
 - [X] Add installation
 - [X] Add file configuration
-- [ ] Add divers databases
+- [X] Add divers databases
 - [ ] Add to Cron
+
+Add divers databases:
+- [X] MySql
  
 ## Installation
 
@@ -21,6 +24,10 @@ this installation create `config.sh`, which you must set:
 * Path for your project
 * Path for backup
 * Name for file
+* Name of databases
+* Host of databases
+* User of databases
+* Password of databases
 
 When will be done in terminal see communicat:
 

@@ -3,4 +3,9 @@ config=(
   pathWithProject="/home/USER/YOUR-PROJECT"
   pathToBackUp="/home/USER/YOUR-BACKUP-PROJECT"
   filename="YOUR-PROJECT"
+  databases="Driver for your databases"
+  user="User for databases"
+  password="password for databases"
+  host="Host for databases"
+  nameTable="Name table for databases"
 )

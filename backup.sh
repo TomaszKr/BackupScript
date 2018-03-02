@@ -1,5 +1,15 @@
 #!/bin/bash
 
+function selectDatebase(){
+  case $1 in
+    "mysql")
+    mysqldump --user=$user --password=$password --host=$host $nameTable > $variable/backup$date.sql
+;;
+    "*") echo "Your $databases is incorrect"
+esac    
+    echo "Dump databases: $databases"
+}
+
 if [[ ! -e config.sh ]] ; then
   echo "You don't have config with parameters data"
   if [[ ! -e install.sh ]] ; then
@@ -27,9 +37,11 @@ fi
 date=`date +%Y_%m_%d`
 variable=$(mktemp -d)
 
-bash -c "tar -cvzf $variable/$filename"_"$date.tar.gz $pathWithProject"
+selectDatebase $databases
 
-bash -c "cp $variable/$filename"_"$date.tar.gz $pathToBackUp"
+bash -c "cp -rf $pathWithProject $variable"
+
+bash -c "tar -czf $pathToBackUp/$filename"_"$date.tar.gz $variable"
 
 rm -rf $variable
 echo "Done that created:  $pathToBackUp/$filename"_"$date.tar.gz"
