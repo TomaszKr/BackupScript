@@ -6,7 +6,8 @@ Create automatic backup with Cron from scrypt
 - [X] Add scrypt
 - [X] Add installation
 - [X] Add file configuration
-- [ ] Add divers databases:
+- [ ] Add divers databases
+- [ ] Add to Cron
  
 ## Installation
 
@@ -16,7 +17,7 @@ Run script `install.sh`:
 bash your-localisation-from-scrypt/install.sh
 ```
 
-this installation created `config.sh` you must take:
+this installation create `config.sh`, which you must set:
 * Path for your project
 * Path for backup
 * Name for file
@@ -29,7 +30,7 @@ Create config.sh
 
 ## Used
 
-Manual created backup when installation will be ended it is only run script:
+Manual used created backup after installation. Just run the script:
 
 ```bash
 bash your-localisation-from-scrypt/backup.sh
