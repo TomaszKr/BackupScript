@@ -1,9 +1,9 @@
 # Backup project in linux
-Create automatic backup with Cron from scrypt
+Create automatic backup with Cron from script
 
 ## TO DO
 
-- [X] Add scrypt
+- [X] Add script
 - [X] Add installation
 - [X] Add file configuration
 - [X] Add divers databases
@@ -17,10 +17,10 @@ Add divers databases:
 Run script `install.sh`:
 
 ```bash
-bash your-localisation-from-scrypt/install.sh
+bash your-localisation-from-script/install.sh
 ```
 
-this installation create `config.sh`, which you must set:
+This installation create `config.sh`, which you must set:
 * Path for your project
 * Path for backup
 * Name for file
@@ -29,7 +29,7 @@ this installation create `config.sh`, which you must set:
 * User of databases
 * Password of databases
 
-When will be done in terminal see communicat:
+When will be done in terminal see communicate:
 
 ```bash
 Create config.sh
@@ -43,11 +43,11 @@ Manual used created backup after installation. Just run the script:
 bash your-localisation-from-scrypt/backup.sh
 ```
 
-When will be done in terminal see communicat:
+When will be done in terminal see communicate:
 
 ```bash
 Done that created:  YOUR-PATH-FOR-BACKUP/FILENAME_DATE.tar.gz
 ```
 
 ## License
-This scrypt is licensed under the MIT License
+This script is licensed under the MIT Licence
